@@ -8,8 +8,7 @@
 
 const solution = (n, s, c='') => {
   if (n === 0) return c;
-  c = s + c;
-  return solution(n-1, s, c);
+  return solution(n-1, s, c + s);
 };
 
 module.exports = {
