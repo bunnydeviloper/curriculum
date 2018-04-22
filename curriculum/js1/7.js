@@ -6,9 +6,8 @@
  */
 
 const solution = (a, b=2) => {
-  if (a === 1) return false;
   if (a === b) return true;
-  if ((a % b) === 0) return false;
+  if (a === 1 || (a % b) === 0) return false;
   return solution(a, b+1);
 };
 
