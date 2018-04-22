@@ -7,8 +7,7 @@
 
 const solution = (n, s='') => {
   if (n === 0) return s;
-  s = s + 'hello';
-  return solution(n-1, s);
+  return solution(n-1, s + 'hello');
 };
 
 module.exports = {
