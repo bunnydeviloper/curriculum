@@ -8,7 +8,7 @@
 
 const solution = (a, n) => {
   let counter = 0;
-  a.forEach(e => {
+  a.map(e => {
     if (e === n) counter += 1;
   });
   return counter;
