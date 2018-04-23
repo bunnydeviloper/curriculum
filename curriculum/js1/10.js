@@ -8,7 +8,7 @@
  */
 
 const solution = (a, b, f) => {
-  setTimeout(() => {
+  return setTimeout(() => {
     f();
     setTimeout(f, b*1000);
   }, a*1000);
