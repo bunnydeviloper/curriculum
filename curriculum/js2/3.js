@@ -12,7 +12,7 @@ const isPrime = (a, b=2) => {
 };
 
 const solution = (a) => {
-  a.forEach((e, i) => {
+  a.map((e, i) => {
     a[i] = isPrime(e);
   });
   return a;
