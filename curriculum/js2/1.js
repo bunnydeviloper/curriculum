@@ -6,7 +6,7 @@
  */
 
 const solution = (a) => {
-  a.forEach((e, i) => {
+  a.map((e, i) => {
     if (e <= 5) a[i] = 0;
   })
   return a;
