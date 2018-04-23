@@ -6,10 +6,7 @@
  */
 
 const solution = (a) => {
-  a.map((e, i) => {
-    if (e % 2 != 0) a[i] = 0;
-  });
-  return a;
+  return a.map( (e, i) => (e % 2 != 0) ? 0 : e );
 };
 
 module.exports = {
