@@ -10,8 +10,8 @@
 const solution = (a, b, f) => {
   return setTimeout(() => {
     f();
-    setTimeout(f, b*1000);
-  }, a*1000);
+    setTimeout(f, b);
+  }, a);
 };
 
 module.exports = {
