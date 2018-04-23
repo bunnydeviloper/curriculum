@@ -6,7 +6,7 @@
 
 const solution = (a) => {
   let b = [];
-  a.forEach((e) => {
+  a.map((e) => {
     if (e > 5) b.push(e);
   });
   return b;
