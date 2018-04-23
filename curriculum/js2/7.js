@@ -6,8 +6,12 @@
  * @returns {array}
  */
 
-const solution = (a, b) => {
-  return 0;
+const solution = (a, n) => {
+  let counter = 0;
+  a.forEach(e => {
+    if (e === n) counter += 1;
+  });
+  return counter;
 };
 
 module.exports = {
