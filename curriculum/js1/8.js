@@ -5,8 +5,8 @@
  * @returns {number}
  */
 
-const solution = (a, b, i= Math.min(a,b)) => {
-  if (Math.min(a,b) % i === 0 && 0 === Math.max(a,b) % i) return i;
+const solution = (a, b, i= Math.min(a, b)) => {
+  if (a % i === 0 && 0 === b % i) return i;
   return solution(a, b, i-1);
 };
 
