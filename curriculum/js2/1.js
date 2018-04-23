@@ -6,7 +6,10 @@
  */
 
 const solution = (a) => {
-  return [];
+  a.forEach((e, i) => {
+    if (e <= 5) a[i] = 0;
+  })
+  return a;
 };
 
 module.exports = {
