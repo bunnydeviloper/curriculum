@@ -5,7 +5,11 @@
  */
 
 const solution = (a) => {
-  return [];
+  let b = [];
+  a.forEach((e) => {
+    if (e > 5) b.push(e);
+  });
+  return b;
 };
 
 module.exports = {
