@@ -5,11 +5,7 @@
  */
 
 const solution = (a) => {
-  let b = [];
-  a.map((e) => {
-    if (e > 5) b.push(e);
-  });
-  return b;
+  return a.filter( (e) => e > 5 );
 };
 
 module.exports = {
