@@ -7,11 +7,7 @@
  */
 
 const solution = (a, n) => {
-  let counter = 0;
-  a.map(e => {
-    if (e === n) counter += 1;
-  });
-  return counter;
+  return a.filter( (e) => e === n).length;
 };
 
 module.exports = {
