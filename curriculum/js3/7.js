@@ -14,8 +14,10 @@
  * @returns {number}
 */
 
-const solution = (a)=>{
-  return 0;
+const solution = (current, head=current, max=current.v)=>{
+  if (current.v > max) max = current.v;
+  if (!current.next || current.next === head) return max;
+  return solution(current.next, head, max);
 };
 
 module.exports = {
