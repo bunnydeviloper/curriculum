@@ -14,8 +14,11 @@
 */
 
 // Hint: BFS or DFS from the teaching doc
-const solution = (a)=>{
-  return a;
+const solution = (tree, number)=>{
+  if (!tree.length) return;
+  const n = tree.shift();
+  if (n.v === number) return n;
+  return solution(tree.concat(n.children), number);
 };
 
 module.exports = {
