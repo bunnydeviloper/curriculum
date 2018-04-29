@@ -15,9 +15,8 @@
 */
 
 const solution = (current, head=current, max=current.v)=>{
-  if (current.next === null || current.next === head) return max;
   if (current.v > max) max = current.v;
-  console.log(max);
+  if (!current.next || current.next === head) return max;
   return solution(current.next, head, max);
 };
 
