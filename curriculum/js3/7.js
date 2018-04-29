@@ -14,11 +14,11 @@
  * @returns {number}
 */
 
-const solution = (currentNode, max=currentNode.v)=>{
-  if (currentNode.v > max) max = currentNode.v;
+const solution = (current, head=current, max=current.v)=>{
+  if (current.next === null || current.next === head) return max;
+  if (current.v > max) max = current.v;
   console.log(max);
-  if (currentNode.next === null) return max;
-  return solution(currentNode.next, max);
+  return solution(current.next, head, max);
 };
 
 module.exports = {
