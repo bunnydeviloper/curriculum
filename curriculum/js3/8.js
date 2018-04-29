@@ -16,8 +16,10 @@
  * @returns {boolean}
 */
 
-const solution = (a)=>{
-  return true;
+const solution = (current, head = current)=>{
+  if (!current.next) return false;
+  if (current.next == head) return true;
+  return solution(current.next, head);
 };
 
 module.exports = {
