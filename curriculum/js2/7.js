@@ -6,8 +6,8 @@
  * @returns {array}
  */
 
-const solution = (a, b) => {
-  return 0;
+const solution = (a, n) => {
+  return a.filter( (e) => e === n).length;
 };
 
 module.exports = {
