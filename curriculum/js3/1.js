@@ -5,10 +5,10 @@
  */
 
 const solution = (obj)=>{
-  return 0;
-}
+  return Math.max(...Object.values(obj));
+};
 
 module.exports = {
-  solution
-}
+  solution,
+};
 
