@@ -5,8 +5,10 @@
  * @return {nothing}
  **/
 
-const solution = (a,b)=>{
-  return;
+const solution = (o, f, i=0)=>{
+  if (i === Object.keys(o).length) return; 
+  f( Object.keys(o)[i], Object.values(o)[i]);
+  return solution(o, f, i+1);
 }
 module.exports = {
   solution
